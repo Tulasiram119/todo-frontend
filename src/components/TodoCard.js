@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../utils/Context";
 
-const TodoCard = ({ todo, setTodos, todos, setFilterTodos }) => {
-  const { setNote, setError } = useAppContext();
+const TodoCard = ({ todo, setTodos, todos }) => {
+  const { setNote, setError, setFilterTodos } = useAppContext();
   const navigate = useNavigate();
   const { title, description, lastDate, importance, isCompelted } = todo;
   const handleDelete = async () => {

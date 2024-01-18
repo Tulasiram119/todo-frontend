@@ -10,6 +10,7 @@ export default function AppContextProvider({ children }) {
   const [todos, setTodos] = useState(null);
   const [filterTodos, setFilterTodos] = useState(null);
   const [error, setError] = useState(null);
+  const [loader, setLoader] = useState(true);
   const getAllTodos = async () => {
     try {
       const data = await fetch(

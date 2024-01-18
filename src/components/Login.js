@@ -8,7 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState();
   const navigate = useNavigate();
-  const { setAuthenticated,setError } = useAppContext();
+  const { setAuthenticated, setError } = useAppContext();
   const handleClick = async () => {
     try {
       const token = await fetch("https://todoapp-3xjm.onrender.com/auth", {
