@@ -41,6 +41,7 @@ export default function AppContextProvider({ children }) {
         setTodos,
         getAllTodos,
         filterTodos,
+        setFilterTodos,
         error,
         setError,
       }}

@@ -46,6 +46,7 @@ const Login = () => {
             {errorMessage && (
               <p className="text-xl text-red-500">{errorMessage}</p>
             )}
+
             <FormData
               email={email}
               setEmail={setEmail}
@@ -62,6 +63,10 @@ const Login = () => {
               <Link className="text-blue-700 text-sm mt-2" to="/register">
                 New User? Register now
               </Link>
+              <div className="text-sm">
+                <span><span className="text-red-600">testUser : </span>test@gmail.com</span>
+                <span className="p-2"><span className="text-red-600">password : </span>test</span>
+              </div>
             </div>
           </div>
         </div>
